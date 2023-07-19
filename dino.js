@@ -6,7 +6,7 @@ import {
 
 const dinoElement = document.querySelector(".dino");
 const JUMP_SPEED = 0.45;
-const GRAVITY = 0.011;
+const GRAVITY = 0.0015;
 const DINO_FRAME_COUNT = 2; //two image for animation
 const FRAME_TIME = 100;
 
@@ -67,4 +67,12 @@ function onJump(e) {
   }
   yVelocity = JUMP_SPEED;
   isJumping = true;
+}
+
+export function getDinoRec() {
+  return dinoElement.getBoundingClientRect();
+}
+
+export function setDinoLose() {
+  dinoElement.src = "imgs/dino-lose.png";
 }
