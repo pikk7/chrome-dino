@@ -3,7 +3,7 @@ import {
   incrementCustomProperty,
   setCustomProperty,
 } from "./updateCustomProperty.js";
-const SPEED = 0.5;
+const SPEED = 0.05;
 const groundElements = document.querySelectorAll(".ground");
 
 export function updateGround(delta, speedScale) {
